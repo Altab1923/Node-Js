@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include("../partials/head") %>
+</head>
+<body>
+    <%- include("../partials/header") %>
+    <h1>I am <%=user.fname %> and <%=user.lname %></h1>
+
+    <% if(user.admin){ %>
+
+    <h2>I am Admin</h2>
+
+   <% }%>
+   <%- include("../partials/footer") %>
+</body>
+</html>
